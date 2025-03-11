@@ -3,17 +3,17 @@ exports.getUsers = (req, res) => {
 }
 
 exports.createUser = (req, res) => {
-  res.send('Post user route');
+  res.send(`Post user route`);
 }
 
 exports.getUserById = (req, res) => {
-  res.send ('Get user by Id route: {userId}');
+  res.send (`Get user by Id route: ${req.params.userId}`);
 }
 
 exports.putUserById = (req, res) => {
-  res.send('Put user by Id route: {userId}');
+  res.send(`Put user by Id route: ${req.params.userId}`);
 }
 
 exports.deleteUserById = (req, res) => {
-  res.send('Delete user by Id route: {userId}');  
+  res.send(`Delete user by Id route: ${req.params.userId}`);
 }
